@@ -11,7 +11,7 @@ header {
 }
 
 header>nav{
-    z-index: 100;
+    z-index: 3000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,22 +119,30 @@ ul.nav-top > li {
         .container-project {
             position: relative;
             padding: 20px;
+            border-radius: 5px;
             margin-bottom: 30px;
             border-radius: 5px;
             z-index: 1000;
             margin-top: 25px;
-            max-height: 80vh;
+            
             background-color: rgb(243, 243, 243);
-            box-shadow: 2px 3px 17px 0px rgba(71,71,71,0.25);
+            box-shadow: 2px 3px 17px 0px rgba(71,71,71,0.1);
 
+            p.discover {
+                color: #818181;
+                font-size: 1.2rem;
+                max-width: 880px;
+                margin: 19px;
+            }
             .flex {
+                margin: 7px;
                 position: relative;
                 display: flex;
                 align-items: center;
 
                 span {
                     position: absolute;
-                    top: 20px;
+                    top: 0px;
                     right: 20px;
                     font-size: 50px !important;
                 }
@@ -154,8 +162,8 @@ ul.nav-top > li {
             }
 
             img.mobile-vue {
-                height: auto !important;
-                max-height: 680px;
+            
+                max-height: 650px;
             }
 
             .container-vue {
@@ -163,8 +171,8 @@ ul.nav-top > li {
                 border-top-right-radius: 10px;
                 overflow: hidden;
                 display: flex;
-                margin-top: 0px;
-                max-height: 600px;
+                margin-top: 100px;
+                
                 
                 .desktop-vue {
                     max-width: 100% !important;
@@ -334,6 +342,10 @@ body{
     font-size: .9rem;
 }
 
+
+/* -------------------MEDIA QUERY */
+
+
 @media (max-width: 768px) {
     .vue-projet {
         flex-direction: column;
@@ -351,3 +363,270 @@ body{
     }
 }
 
+@media (max-width: 480px) {
+    #content-header {
+        font-size: 1.2rem;
+        margin: 50px 0 0 20px;
+    }
+
+    #me p {
+        font-size: 8rem;
+    }
+
+    ul.nav-top {
+        font-size: 1rem;
+        padding: 5px;
+    }
+    
+    #my-latest-project .container-project .flex span {
+        font-size: 20px !important;
+    }
+}
+
+/* ABOUT ME */
+
+#heading{
+    position: relative;
+    bottom: 100px;
+    /* margin: 50px 0 50px 150px; */
+    h1{
+        position: absolute;
+        top: -100px;
+        margin: 15px;
+        color: rgb(180, 177, 177, 0.3);
+        font-size: 5.9rem;
+        font-weight: 200;
+        }
+        h2{
+            top: -47px;
+            left: 65px;
+            position: relative;
+            font-size: 3.7rem;
+            font-weight: 400;
+            color: #2548AE;
+
+        }
+    }
+#about-me {
+    max-width: 85vw;
+    margin: 0 auto;
+    
+    }
+
+   section#grid-about{
+    padding: 25px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-top: 70px;
+
+        gap: 10px;
+          #me-about{
+                margin: 100px;
+                display: flex;
+                justify-content: center;
+
+
+          }
+            #me-profil{
+                position: absolute; 
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 200px; 
+                height: auto;
+                z-index: 1; 
+                    #background-profil{
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+            }
+
+            #resume {
+                margin-top: 90px;
+                   p#hello{
+                    color: #0A245E;
+                    font-size: 2.2rem;
+                    margin: 20px;
+                   }
+                   p{
+                    color: #6b6b6c;
+                    font-size: 1.3rem;
+                    margin: 20px;
+                    max-width: 80%;
+                   }
+
+                  .hr{
+                    margin: 10px;
+                    border :solid 1px rgb(243, 243, 243);
+                    width:100%
+                  }
+
+                  #formation{
+                    margin:15px 45px;
+                    color: #696969;
+                    font-size: 1.3rem;
+                  }
+
+
+                  .contact-me {
+                    position: absolute;
+                    right: 0;
+                    background-color: #2548AE;
+                    width: 250px;
+                    height: 115px;
+                    padding: 2px;
+
+                        p{
+                            color:#fff;
+                            margin-top: 7px;
+                        }
+
+                        p.contact-info{
+                            color: rgb(255, 255, 255);
+                            font-size: 0.74rem;
+                        }
+                     .contact{
+                        position: relative;
+                        top: 25px;
+                        left: 37px;
+                        height: 115px;
+                        background-color: #d8d8d8ef;
+                        width: 215px;
+                        z-index: 2000;
+
+                        img{
+                            position: absolute;
+                            right: 0px;
+                            bottom: 9px;
+                        }
+                     }
+                  }
+                
+            }
+        }
+
+ #heading >figure.flex{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            figcaption{
+                line-height: 29px;
+                position: absolute;
+                top:65%;
+                left: 27%;
+                font-size: 1.7rem;
+                color: #193a81;
+                z-index: 2000;
+                font-weight: 550;
+
+                    span{
+                        display: block;
+                        
+                    }
+
+                    span.last {
+                        font-weight: 500;
+                    }
+            }
+}
+
+#grid-education-langage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    margin: 20px 0 0 150px;
+
+     #langage, #education{
+          h1{
+            text-transform: uppercase;
+            color:#2548AE;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-left: 30px;
+          }
+          p.where{
+
+            color: #2548AE
+          }
+
+          p.when {
+            margin: 2px 5px;
+            font-size: 0.9rem;
+          }
+
+          p.loca {
+            margin: 2px 5px;
+            font-size: 0.9rem;
+          }
+
+          p.what-langage {
+            font-size: 1.1rem;
+          }
+
+          p.skill {
+            font-size: .75rem;
+            color: rgb(186, 186, 186);
+          }
+     }
+
+
+}
+
+div.flex2{
+    margin: 0 18px;
+    display: flex;
+}
+
+.hr2{
+    margin: 10px;
+    border :solid 1px rgb(243, 243, 243);
+    width:50%
+  }
+
+  .flex-bullet { 
+    display : flex;
+    max-width: 350px;
+    justify-content: space-between;
+
+        img{
+          position: relative;
+          top: 12px;
+          height: 27px;
+        }
+  }
+
+  section#education > p {
+    
+        color: #3f3f3f;
+        font-size: 1.3rem;
+        margin:15px 20px;
+        max-width: 80%;
+     
+  }
+
+/* TECHNICAL OUTLINE   */
+
+#technical-outline{
+    background-color: #f3f3f3;
+    height: 70vh;
+    
+    border-radius: 5px;
+    max-width: 85vw;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 20px;     
+       
+        section#grid-technical{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    
+
+
+
+
+}
