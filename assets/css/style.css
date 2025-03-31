@@ -116,76 +116,75 @@ ul.nav-top > li {
         max-width: 85vw;
         overflow: hidden;
         
-        section.container-project {
+        .container-project {
+            position: relative;
+            padding: 20px;
+            margin-bottom: 30px;
             border-radius: 5px;
             z-index: 1000;
             margin-top: 25px;
             max-height: 80vh;
             background-color: rgb(243, 243, 243);
-            box-shadow:2px 3px 17px 0px rgba(71,71,71,0.25);
+            box-shadow: 2px 3px 17px 0px rgba(71,71,71,0.25);
+
+            .flex {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                span {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    font-size: 50px !important;
+                }
+            }
         }
     
-
-
-        .arrow {
-            position: relative;
-            left: 100p;
-        }
-
-        figure img[alt="logo-m"]{
-            margin: 25px;
-        
-        }
-
-        p.name-project{
-            font-size: 1.7rem;
-            margin: 35px -25px 0;
-            font-weight: 650;
-
-        }
-        .discover{
-            font-size: 1.5rem;
-            color: rgb(134, 134, 134);
-            max-width: 900px;
-            padding:0 35px
-        }
-
-        .vue-projet{
+        .vue-projet {
             display: flex;
-            margin-top : 45px;
-
-                img.mobile-vue{
-                    height: 680px;
-                }
-
-         .container-vue {
-            /* background-color: rgb(255, 255, 255); */
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            margin-top: 45px;
             overflow: hidden;
-            display: flex;
-            margin-top: 0px;
-            max-height: 600px;
-            
-            .desktop-vue{
-                height: 90%;
-                align-self: center;
-                margin: 0 auto;
+            max-height: 680px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+
+            img.mobile-vue {
+                height: auto !important;
+                max-height: 680px;
+            }
+
+            .container-vue {
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
+                overflow: hidden;
+                display: flex;
+                margin-top: 0px;
+                max-height: 600px;
                 
+                .desktop-vue {
+                    max-width: 100% !important;
+                    height: auto !important;
+                    align-self: center;
+                    margin: 0 auto;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
             }
-         }           
-          
-         .desktop-vue-task{
-            width: 65%;
-            align-self: center;
-            margin: 0 auto;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            
-        }
-            
+
+            .desktop-vue-task {
+                display: block;
+                margin: 0 auto;
+                max-width: 65%;
+                height: auto !important;
+                align-self: center;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
         }
     }
 
@@ -333,5 +332,22 @@ body{
 ::placeholder{
     color:rgb(33, 33, 33);
     font-size: .9rem;
+}
+
+@media (max-width: 768px) {
+    .vue-projet {
+        flex-direction: column;
+    }
+    
+    .mobile-vue, 
+    .desktop-vue, 
+    .desktop-vue-task {
+        width: 100%;
+        max-height: none;
+    }
+    
+    .container-project .flex span {
+        font-size: 30px !important;
+    }
 }
 
