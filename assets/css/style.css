@@ -32,12 +32,6 @@ header img[alt="vector"] {
 }
 
 ul.nav-top{
-        li:first-child{
-            padding: 5px;
-            color:#0A245E;
-            border-radius: 15px;
-            background-color: #92A7E7;
-        }
     position: fixed;
     top: 7px;
     display: flex;
@@ -50,6 +44,15 @@ ul.nav-top{
     margin: 11px 15px;
     background-color:rgb(34, 34, 34); 
     border-radius: 25px;
+    z-index: 2000;
+
+        li:first-child{
+            padding: 5px;
+            color:#0A245E;
+            border-radius: 15px;
+            background-color: #92A7E7;
+        }
+
 }
 
 ul.nav-top > li {
@@ -624,9 +627,24 @@ div.flex2{
             display:grid;
             grid-template-columns: 1fr 1fr;
         }
+}
+
+/* SLIDER/ */
+
+.splide {
     
+    margin-top: 25px;
+    padding: 20px; 
+    
+    splide__list{
+        max-width: 350px;
+    }    
 
-
-
-
+    .splide__slide img {
+        height: 180px;
+        background-color: #dedede;
+        padding: 25px;
+        
+        border-radius: 5px;
+    }
 }
