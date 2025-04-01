@@ -9,8 +9,15 @@
     <link href="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
-</head>
+
+
+
+</head> 
 
 <body>
 
@@ -23,14 +30,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <li>Chat</li>
             </ul>
         </nav>
-
-        <p id="content-header">Salut ! Rencontrez votre futur partenaire de développement, créant des expériences web
-            modernes et performantes.</p>
+   
+            
+    <p id="content-header">Salut ! Rencontrez votre futur partenaire de développement, créant des expériences web
+            modernes et performantes.</p> 
+    <div id="btn-header">
+        <button type="submit" id="dernier-projet" style="z-index: 2500;">Mes derniers projets</button>
+        <button type="submit" id="savoir-plus">En savoir plus</button>
+    </div>
         <div id="me">
-            <p>Grigorian</p>
-            <p>Serge</p>
+            <p>Grigorian Serge</p>
+           
         </div>
-        <img src="./assets/img/Vector 4.png" alt="vector">
+       
+        <!-- <img src="./assets/img/Vector 4.png" alt="vector"> -->
 
     </header>
 
@@ -53,7 +66,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <img src="./assets/img/logoM.png" alt="logo-m">
                     </figure>
                     <p class="name-project">Media Smart</p>
-                    <span class style='font-size:100px;'>&#8594;</span>
+                    <span class="arrow" style='font-size:100px;'>&#8594;</span>
                 </div>
                 <p class="discover">Découvrez Media Smart, un projet innovant de media tech en ligne, alliant
                     technologie et contenu pour une expérience numérique unique.</p>
@@ -73,7 +86,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <img src="./assets/img/task-logo.png" alt="logo-m" style="height: 50px;">
                     </figure>
                     <p class="name-project">Task Collab</p>
-                    <span class style='font-size:100px;'>&#8594;</span>
+                    <span class="arrow" style='font-size:100px;'>&#8594;</span>
                 </div>
                 <p class="discover">Découvrez TaskCollab, un projet innovant tâche en collaboration , alliant
                     technologie et contenu pour une expérience numérique unique.</p>
@@ -93,7 +106,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <img src="./assets/img/logo-landing$.png" alt="logo-m" style="height: 50px;">
                     </figure>
                     <p class="name-project">Landing Page</p>
-                    <span class style='font-size:100px;'>&#8594;</span>
+                    <span class="arrow" style='font-size:100px;'>&#8594;</span>
                 </div>
                 <p class="discover">Optimisez votre gestion de travail avec notre plateforme intelligente, alimentée par
                     l'IA. Simplifiez vos tâches, gagnez en productivité et prenez des décisions éclairées en un clin
@@ -177,20 +190,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <div class="hr2"></div>
                 <div class="flex-bullet">
                     <p class="what-langage">Français</p>
-                    <img src="./assets/img/bullet-point.png" alt="" style="height: 27px;">
+                    <img src="./assets/img/bullet-point (2).png" alt="" style="height: 27px;">
                 </div>
 
                 <p class="skill">Compétent</p>
                 <div class="hr2"></div>
                 <div class="flex-bullet">
                     <p class="what-langage">Anglais</p>
-                    <img src="./assets/img/bullet-point-anglais.png" alt="">
+                    <img src="./assets/img/anglais-bullet.png" alt="">
                 </div>
                 <p class="skill">Avancé</p>
                 <div class="hr2"></div>
                 <div class="flex-bullet">
                     <p class="what-langage">Russe</p>
-                    <img src="./assets/img/bullet-point.png" alt="">
+                    <img src="./assets/img/bullet-point (2).png" alt="">
                 </div>
                 <p class="skill">Compétent</p>
 
@@ -214,25 +227,33 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
                 </section>
 
-
-                <section class="splide2" aria-label="Basic Structure Example">
-                    <div class="splide2__track">
-                        <ul class="splide2__list">
-                            <li class="splide2__slide"><img src="./assets/img/php-128.png" alt=""></li>
-                            <li class="splide2__slide"><img src="./assets/img/symfony-144.png" alt=""></li>
-                            <li class="splide2__slide"><img src="./assets/img/vue.js-96.png" alt=""></li>
-                        </ul>
+                
+            
+                <section class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/img/php-128.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/symfony-144.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/vue.js-96.png" alt=""></div>
                     </div>
-
+            
+            
+            
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-scrollbar"></div>
                 </section>
-
-
 
             </section>
 
             <section id="technical">
                 <h1>TECHNICAL OUTLINE</h1>
+                <div class="hr-tech"></div>
+                <p>Selecting the right technology is crucial for building a scalable, maintainable, and high-performing product.
 
+                    I create a comprehensive technical document that outlines the best tools, frameworks, and architecture for your specific needs—always prioritizing what serves the project best. This ensures a clear roadmap for development, minimizing future technical debt and optimizing for both efficiency and flexibility.
+                    
+                    Whether it’s framework, library or architecture, every decision is made with long-term success in mind.</p>
 
             </section>
 
@@ -243,13 +264,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </section>
 
 
+    
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
+
     <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/splide.js"></script>
 </body>
 
 
