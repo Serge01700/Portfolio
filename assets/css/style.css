@@ -26,13 +26,13 @@ header img[alt="vector"] {
 }
 
 #content-header  {
-    color : #8564f0ea;
+    color : #b8a7efea;
     font-size: 1.7rem;
     /* margin: 50px 0 0 300px; */
     position: absolute;
-    top: 25%;
+    top: 55%;
     text-align: center;
-    left: 20%;
+    left: 14%;
     
     
     max-width: 1000px;
@@ -49,42 +49,36 @@ ul.nav-top{
     color: white;
     font-size: 1.2rem;
     /* width: 25%; */
+    border: 1px solid #fff;
     margin: 11px 15px;
+  
     background: rgb(255,255,255);
-    background: linear-gradient(45deg, #756CDA, #A9A9A9, #DCDCDC);
-    opacity: 0.7;
-    animation: gradientEffect 12s ease-in-out infinite;
-    background-size: 400% 400%;
+    background: linear-gradient(90deg, #756CDA, #9B8DD9, #B5A7D7, #DCDCDC);
+    opacity: 0.8;
+    background-size: 300% 100%;
+    animation: waveGradient 5s ease infinite;
     border-radius: 25px;
     z-index: 2000;
-
-        li:first-child{
-            padding: 5px;
-            color:#32329e;
-            border-radius: 15px;
-            background-color: #a290f4;
+      }
+      
+      ul.nav-top li:first-child {
+        padding: 5px;
+        color: #32329e;
+        border-radius: 15px;
+        background-color: #a290f4;
+      }
+      
+      @keyframes waveGradient {
+        0% {
+          background-position: 0% 50%;
         }
-
-}
-
-
-@keyframes gradientEffect {
-    0% {
-      background: linear-gradient(45deg, #756CDA, #9B8DD9, #B5A7D7, #DCDCDC);
-    }
-    25% {
-      background: linear-gradient(45deg, #9B8DD9, #B5A7D7, #DCDCDC, #756CDA);
-    }
-    50% {
-      background: linear-gradient(45deg, #B5A7D7, #DCDCDC, #756CDA, #9B8DD9);
-    }
-    75% {
-      background: linear-gradient(45deg, #DCDCDC, #756CDA, #9B8DD9, #B5A7D7);
-    }
-    100% {
-      background: linear-gradient(45deg, #756CDA, #9B8DD9, #B5A7D7, #DCDCDC);
-    }
-  }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
 
 button#dernier-projet{
     background-color: #756CDA;
@@ -130,9 +124,9 @@ button#savoir-plus:hover{
 
 #btn-header{
     position: absolute;
-    top: 61%;
-    transform: translate(-50%, -50%);
-    left: 50%;
+    top: 71%;
+    /* transform: translate(-50%, -50%); */
+    left: 34%;
     z-index: 2000;
     /* transform: translate(-10%, -10%); */
 }
@@ -155,7 +149,7 @@ div#me{
 
 #me p{
     position: absolute;
-    top: 44%;
+    top: 41%;
     left: 47%;
     transform:translate(-50%, -50%);
     color: #fff;
