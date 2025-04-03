@@ -1,30 +1,17 @@
-const swiper = new Swiper('.swiper', {
-    
-    direction:'horizontal',
-    spaceBetween: 30,
-    effect: 'fade',
-    loop: true,
-    // speed: 50000,
-    slidesPerView: 2,
-    loop: true,
-  
-    
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
- 
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
- 
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+let splide = new Splide( `.splide.is-first`, {
+  direction: 'ttb',
+  perPage: 2, 
+  height: '750px',
+  wheel: true,
+  type: 'loop',
+  pagination: false,
+  autoplay: true,
+  interval: 3700,
+  arrows: false,
+  pauseOnHover:true
+} );
+
+console.log(splide);
+
+
+splide.mount();

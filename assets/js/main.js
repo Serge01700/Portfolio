@@ -7,10 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
       type: 'loop',
       pagination: false,
       autoplay: true,
-      interval: 2700,
+      interval: 4700,
       arrows: false,
       pauseOnHover:true
     });
   
-    splide.mount();})
+    splide.mount();
+  })
   
