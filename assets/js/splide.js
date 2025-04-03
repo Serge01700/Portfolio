@@ -1,16 +1,17 @@
-const swiper = new Swiper('.swiper', {
-  direction: 'vertical',
-  spaceBetween: 205, 
-  slidesPerView: 2,
-  // loop: true, 
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false, 
-  },
+let splide = new Splide( `.splide.is-first`, {
+  direction: 'ttb',
+  perPage: 2, 
+  height: '750px',
+  wheel: true,
+  type: 'loop',
+  pagination: false,
+  autoplay: true,
+  interval: 3700,
+  arrows: false,
+  pauseOnHover:true
+} );
 
-  pagination: {
-    dynamicBullets: true, 
-  },
+console.log(splide);
 
-  
-});
+
+splide.mount();

@@ -455,8 +455,28 @@ body{
 
 #contact-form{
     display:grid;
-
+    place-items: center;
     grid-template-columns: repeat(3,1fr);
+
+    section#first-colomn{
+        max-width: 500px;
+       
+        .btn-form{
+            margin: 8px 5px;
+                    padding: 8px;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    background-color: #7b161600;
+                    cursor: pointer;
+                    border-radius: 15px;
+                    transition: ease-in-out .5s;
+                   
+        }
+        .btn-form:hover{
+            transform: scale(1.05);
+            background-color: #1E1E2F;
+        }
+    }
         h1{
             color:#393939;
         }
@@ -474,6 +494,7 @@ body{
         
 
         section#second-colomn{
+           
             p,
             h1{
                 color: #fff;
@@ -491,6 +512,12 @@ body{
                     background-color: #7b161600;
                     cursor: pointer;
                     border-radius: 15px;
+                    transition: ease-in-out .5s;
+                }
+
+                .btn-form:hover{
+                    transform: scale(1.05);
+            background-color: #1E1E2F;
                 }
             }
         }
@@ -898,11 +925,16 @@ div.flex2{
 .swiper {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    /* height: auto; */
     /* max-width: 250px;  
     margin-top: 39px; */
     overflow:hidden ;
-    max-height: 1200px;
+    /* max-height: 1200px; */
+
+    .swiper-wrapper {
+        overflow: hidden;
+       max-height: 1200px;
+    }
     
 }
 
@@ -921,6 +953,8 @@ div.flex2{
 
 
 }
+
+
 
 .swiper-slide img {
     height: 120px;
