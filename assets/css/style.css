@@ -612,7 +612,369 @@ body{
     }
 }
 
+@media (max-width: 1024px) {
+    #content-header {
+        font-size: 1.5rem;
+        left: 10%;
+        width: 80%;
+    }
+    
+    #btn-header {
+        left: 30%;
+    }
+    
+    #me p {
+        font-size: 5rem;
+    }
+    
+    #latest-work {
+        left: 15%;
+    }
+    
+    main.contain-project {
+        max-width: 95vw;
+    }
+    
+    #contact-form {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    section#grid-about {
+        grid-template-columns: 1fr;
+    }
+    
+    #grid-education-langage {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+    
+    #technical-outline {
+        height: auto;
+    }
+    
+    section#grid-technical {
+        grid-template-columns: 1fr;
+    }
+    
+    #what-technology {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .vue-projet {
+        flex-direction: column;
+    }
+    
+    .mobile-vue, 
+    .desktop-vue, 
+    .desktop-vue-task {
+        width: 100%;
+        max-height: none;
+    }
+    
+    .container-project .flex span {
+        font-size: 30px !important;
+    }
+    
+    #content-header {
+        font-size: 1.4rem;
+        left: 5%;
+        width: 90%;
+        top: 50%;
+    }
+    
+    #btn-header {
+        left: 20%;
+    }
+    
+    #me p {
+        font-size: 4rem;
+    }
+    
+    #latest-work {
+        left: 5%;
+        max-width: 90%;
+    }
+    
+    #heading h1 {
+        font-size: 3.5rem;
+    }
+    
+    #heading h2 {
+        font-size: 2.5rem;
+        left: 30px;
+    }
+    
+    #heading > figure.flex figcaption {
+        font-size: 1.2rem;
+        left: 15%;
+    }
+    
+    #me-about {
+        margin: 20px !important;
+    }
+    
+    #resume p#hello {
+        font-size: 1.8rem;
+    }
+    
+    #resume p {
+        font-size: 1.1rem;
+        max-width: 95%;
+    }
+    
+    .contact-me {
+        position: relative !important;
+        width: 100% !important;
+        margin-top: 20px;
+    }
+    
+    .contact {
+        position: relative !important;
+        width: 90% !important;
+        left: 5% !important;
+    }
+    
+    #what-technology {
+        grid-template-columns: 1fr;
+    }
+    
+    ul.nav-top {
+        width: auto;
+        padding: 0 10px;
+    }
+    
+    ul.nav-top > li {
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 480px) {
+   
+    #content-header {
+        font-size: 1.1rem;
+        top: 45%;
+        left: 5%;
+        width: 90%;
+    }
+    
+    #btn-header {
+        top: 65%;
+        left: 10%;
+    }
+    
+    button#dernier-projet, button#savoir-plus {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    #me p {
+        font-size: 2.5rem;
+        top: 35%;
+    }
+    
+    ul.nav-top {
+        font-size: 0.8rem;
+        padding: 5px;
+        top: 5px;
+    }
+    
+    ul.nav-top > li {
+        margin: 0 5px;
+    }
+    
+    #my-latest-project .container-project .flex span {
+        font-size: 20px !important;
+    }
+    
+    #latest-work {
+        max-width: 90%;
+        left: 5%;
+    }
+    
+    #latest-work #my-latest {
+        font-size: 2.5rem;
+    }
+    
+    #latest-work #from {
+        margin: 27px 0 0 100px;
+    }
+    
+    #heading h1 {
+        font-size: 2.5rem;
+    }
+    
+    #heading h2 {
+        font-size: 1.8rem;
+        left: 20px;
+        top: -25px;
+    }
+    
+    #heading > figure.flex figcaption {
+        font-size: 1rem;
+        left: 10%;
+    }
+    
+    #resume p#hello {
+        font-size: 1.5rem;
+    }
+    
+    #resume p {
+        font-size: 1rem;
+    }
+    
+    #formation {
+        margin: 15px 20px !important;
+        font-size: 1.1rem !important;
+    }
+    
+    #grid-education-langage h1 {
+        font-size: 1.3rem;
+    }
+    
+    #technical p {
+        font-size: 1.1rem;
+        line-height: 30px;
+    }
+    
+    section#personal-skill h2, 
+    section#personal-skill h1 {
+        font-size: 1.8rem;
+    }
+    
+    #btn-skill .skill-p {
+        font-size: 0.9rem;
+        margin: 10px;
+    }
+    
+    #detail-projet p.name-project {
+        font-size: 2rem;
+    }
+    
+    #detail-projet p.role {
+        position: relative;
+        right: 0;
+        padding: 0 25px;
+    }
+    
+    #detail-projet p.description-projet {
+        font-size: 1.2rem;
+    }
+    
+
+    section#first-colomn, section#second-colomn, section#third-colomn {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    input {
+        width: 90% !important;
+    }
+    
+    .btn-form {
+        width: 100%;
+        margin: 5px 0 !important;
+    }
+}
+
+@media (max-width: 360px) {
+    #content-header {
+        font-size: 0.9rem;
+    }
+    
+    #btn-header {
+        left: 5%;
+    }
+    
+    button#dernier-projet, button#savoir-plus {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+    
+    #me p {
+        font-size: 2rem;
+    }
+    
+    ul.nav-top {
+        font-size: 0.7rem;
+    }
+    
+    #heading h1 {
+        font-size: 2rem;
+    }
+    
+    #heading h2 {
+        font-size: 1.5rem;
+    }
+    
+    .swiper-slide {
+        max-width: 100px !important;
+        height: 110px !important;
+    }
+    
+    .swiper-slide img {
+        height: 90px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #me-profil {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 0 auto;
+        width: 150px;
+    }
+    
+    #top-contain {
+        flex-direction: column;
+    }
+    
+    #top-contain #nav-content {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .flex2 {
+        flex-direction: column;
+    }
+    
+    .hr2 {
+        width: 100%;
+    }
+    
+    .parent {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    figure.flex-media {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 400px) {
+    ul.nav-top li {
+        margin: 0 3px !important;
+    }
+    
+    ul.nav-top {
+        padding: 5px 3px;
+    }
+}
+
+
+
+
 /* ABOUT ME */
+
+
 
 #heading{
     position: relative;
@@ -904,7 +1266,7 @@ div.flex2{
 
 .splide {
     max-width: 250px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     padding: 20px; 
     
     .splide__list{
@@ -912,7 +1274,7 @@ div.flex2{
     }    
 
     .splide__slide img {
-        height: 120px;
+        height: 100px;
         background-color:#2D2D42;
         border: 1px solid #a9a8a8;
         padding: 25px;
