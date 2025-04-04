@@ -14,4 +14,22 @@ document.addEventListener('DOMContentLoaded', function() {
   
     splide.mount();
   })
+
+
+  // REDIRECTION ---------------------- 
+
   
+const btnProject = document.querySelector('#dernier-projet');
+const lastProject = document.querySelector('.contain-project');
+const more = document.querySelector('#savoir-plus');
+const aboutMe = document.querySelector('#about-me');
+
+btnProject.addEventListener('click', ()=> {
+  lastProject.scrollIntoView({behavior: 'smooth', block: 'start'})
+})
+  
+more.addEventListener('click', () => {
+  aboutMe.scrollIntoView({behavior: 'smooth', block: 'start'});
+})
+
+

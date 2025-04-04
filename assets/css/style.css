@@ -50,13 +50,13 @@ header img[alt="vector"] {
     font-size: 1.7rem;
     font-family: GT Walsheim;
     position: absolute;
-    top: 59%;
+    top: 54%;
     text-align: center;
     animation: waveGradient 5s ease infinite;
     background: rgb(255,255,255);
     background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(184,167,239,1) 23%, rgba(143,113,231,1) 52%, rgba(114,83,209,1) 81%, rgb(59, 83, 221) 100%);
     background-size: 350% 100%;
-    left: 24%;
+    left: 17%;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -155,9 +155,9 @@ button#savoir-plus:hover{
 
 #btn-header{
     position: absolute;
-    top: 72%;
+    top: 67%;
     /* transform: translate(-50%, -50%); */
-    left: 41%;
+    left: 37.5%;
     z-index: 2000;
 
 }
@@ -228,7 +228,7 @@ div#me{
     border-radius: 10px;
     position: relative;
     left: 27%;
-    top: -2%;
+    top: 25%;
     border: 1px solid rgb(186, 161, 209);
     align-items: center;
     justify-content: center; 
@@ -448,8 +448,9 @@ body{
     /* background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(37,72,174,1) 100%) no-repeat; */
     /* background: rgb(255,255,255); */
     background: linear-gradient(100deg, rgba(255,255,255,1) 0%, rgba(184,167,239,1) 23%, rgb(113, 154, 231) 52%, rgb(83, 188, 209) 81%, rgb(59, 83, 221) 100%);
-    background-size: 350% 100%;
-    height: 100vh;
+    background-size: 350% 350% ;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
     animation: waveGradient 5.5s ease infinite;
 }
 
@@ -502,7 +503,7 @@ body{
             }
             
             .btn-contain{
-                max-width: 380px;
+                /* max-width: 380px; */
                
                 .btn-form{
                     margin: 8px 5px;
@@ -523,19 +524,24 @@ body{
         }
 
         #submit-form{
-            background-color: #0A245E;
-            color: white;
+            
             border:none;
             padding: 11px;
+            width: 90%;
+            margin: 0 auto;
             border-radius: 7px;
             place-items: center;
+           
             cursor: pointer;
+
             
           
         }
 
         #submit-form:hover{
-            background-color: #44609e;
+             background: linear-gradient(100deg, rgba(255,255,255,1) 0%, rgba(184,167,239,1) 23%, rgb(113, 154, 231) 52%, rgb(83, 188, 209) 81%, rgb(59, 83, 221) 100%);
+             background-size: 300% 150%;
+             animation: waveGradient 15s ease infinite;
             border: solid 1px #fff;
           }
 
@@ -579,13 +585,30 @@ body{
     .vue-projet {
         flex-direction: column;
     }
+
+  
+    #menu{
+        position:absolute;
+        right: 20px;
+        top: 55px;
+    }
     
+    section#technical > p,
+    section#technical h1
+     {
+        
+        display: none;
+    }
+    
+
     .mobile-vue, 
     .desktop-vue, 
     .desktop-vue-task {
         width: 100%;
         max-height: none;
     }
+
+    
     
     .container-project .flex span {
         font-size: 30px !important;
@@ -613,6 +636,18 @@ body{
 }
 
 @media (max-width: 1024px) {
+
+
+    section#technical > p {
+        font-size: 0.9rem;
+        
+    }
+
+    div.contact-me{
+        display:none;
+    }
+
+
     #content-header {
         font-size: 1.5rem;
         left: 10%;
@@ -644,11 +679,11 @@ body{
         grid-template-columns: 1fr;
     }
     
-    #grid-education-langage {
+    /* #grid-education-langage {
         grid-template-columns: 1fr;
-        margin: 20px;
+        /* margin: 20px; */
     }
-    
+     
     #technical-outline {
         height: auto;
     }
@@ -660,10 +695,20 @@ body{
     #what-technology {
         grid-template-columns: 1fr 1fr;
     }
-}
+
 
 @media (max-width: 768px) {
     
+
+    section#grid-education-langage{
+        margin: 3px 10px;
+
+    }
+
+    div.flex2 img {
+        margin: auto;
+    }
+
     .vue-projet {
         flex-direction: column;
     }
@@ -687,7 +732,7 @@ body{
     }
     
     #btn-header {
-        left: 20%;
+        left: 16%;
     }
     
     #me p {
@@ -750,9 +795,13 @@ body{
     ul.nav-top > li {
         margin: 0 8px;
     }
+    
+    #contact-form > input {
+        width: 100%;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
    
     #content-header {
         font-size: 1.1rem;
@@ -763,7 +812,7 @@ body{
     
     #btn-header {
         top: 65%;
-        left: 10%;
+        left: 21%;
     }
     
     button#dernier-projet, button#savoir-plus {
@@ -874,9 +923,9 @@ body{
         width: 90% !important;
     }
     
-    .btn-form {
-        width: 100%;
-        margin: 5px 0 !important;
+    button.btn-form {
+        width: 95%;
+        /* margin: 5px 20px !important; */
     }
 }
 
@@ -922,7 +971,7 @@ body{
 
 
 @media (max-width: 768px) {
-    #me-profil {
+    img#me-profil {
         position: relative;
         top: auto;
         left: auto;
@@ -1195,7 +1244,7 @@ div.flex2{
 .hr2{
     margin: 10px;
     border :solid 1px rgb(243, 243, 243);
-    width:50%
+    width:65%
   }
 
   .flex-bullet { 
@@ -1353,7 +1402,7 @@ section#personal-skill{
                     cursor: pointer;
                     padding: 7px;
                     margin: 20px;
-                    /* max-width: 80%; */
+                    max-width: 80%;
                     border: none;
                     transition:  .3s ease-in-out;
                 }
