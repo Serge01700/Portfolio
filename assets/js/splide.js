@@ -11,7 +11,7 @@ let splide = new Splide( `.splide.is-first`, {
   pauseOnHover:true
 } );
 
-console.log(splide);
+
 
 
 splide.mount();
