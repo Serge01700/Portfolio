@@ -59,7 +59,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <img src="./assets/img/logoM.png" alt="logo-m">
                     </figure>
                     <p class="name-project">Media Smart</p>
-                    <span class="arrow" style='font-size:100px;'>&#8594;</span>
+                    <a href="./detail-projet.html"><span class="arrow" style='font-size:100px;'>&#8594;</span></a>
                 </div>
                 <p class="discover">Découvrez Media Smart, un projet
                     innovant de media tech en ligne, alliant

@@ -87,13 +87,11 @@ ul.nav-top{
     animation: waveGradient 7.2s ease infinite;
     border-radius: 25px;
     z-index: 2000;
+
       }
       
-      ul.nav-top li:first-child {
-        padding: 5px;
-        color: #32329e;
-        border-radius: 15px;
-        background-color: #a290f4;
+      ul.nav-top li {
+       cursor: pointer;
       }
       
       @keyframes waveGradient {
